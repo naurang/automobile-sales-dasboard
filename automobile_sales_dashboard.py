@@ -99,7 +99,17 @@ html.Div(className="row text-center mb-4", children=[
             ])
         ]),
 
-        html.Div(id='output-container', className='row gy-4')
+        html.Div(id='output-container', className='row gy-4'),
+                # 👇 ADD YOUR DETAILS HERE 
+        html.Footer(className="text-center mt-5", children=[
+            html.Hr(),
+            html.P([
+                "Dashboard by ",
+                html.A("Suraj Singh", href="https://www.linkedin.com/in/suraj-singh-naurang/", target="_blank", className="text-decoration-none fw-bold text-primary"),
+                html.I(className="bi bi-linkedin ms-2")
+            ], className="text-muted")
+        ])
+
     ])
 ])
 
